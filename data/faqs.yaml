@@ -1,0 +1,8 @@
+# FAQ entries. Each becomes one collapsible question.
+#
+# Example shape:
+#   faqs:
+#     - q: <question>
+#       a: <answer; basic HTML allowed if you need a link>
+
+faqs: []

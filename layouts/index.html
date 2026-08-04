@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+{{ partial "head.html" . }}
+<body>
+  {{ partial "navbar.html" . }}
+  <main>
+    {{/* Page sections, in order. Each is owned by one person. */}}
+    {{ partial "hero.html" . }}
+    {{ partial "about.html" . }}
+    {{ partial "schedule.html" . }}
+    {{ partial "sponsors.html" . }}
+    {{ partial "faq.html" . }}
+    {{ partial "organisers.html" . }}
+  </main>
+  {{ partial "footer.html" . }}
+
+  <script src="{{ "js/main.js" | relURL }}" defer></script>
+</body>
+</html>

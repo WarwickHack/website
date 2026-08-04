@@ -1,0 +1,9 @@
+# The organiser grid/carasouel/your-choice. Rebuilt most years as the team turns over.
+#
+# Expected shape:
+#   organisers:
+#     - name:  <display name>
+#       role:  <short role line>
+#       photo: <filename in static/img/organisers/, or "" for a fallback>
+
+organisers: []

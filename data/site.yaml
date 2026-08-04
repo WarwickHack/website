@@ -1,0 +1,12 @@
+# Core event settings: the headline details that change each year
+#
+# Expected keys (fill in):
+#   event_number      – e.g. 26
+#   date_text         – human-readable date string for the hero
+#   location          – venue / campus
+#   starts_at         – ISO datetime, hacking start (drives the countdown)
+#   ends_at           – ISO datetime, hacking end
+#   title_sponsor_id  – id of a sponsor in sponsors.yaml, or "" for none
+#   tickets           – label / url / state (enabled | disabled | soldout)
+#   event_live        – true during the event to reveal the live page link
+#   socials           – email / instagram / linkedin / discord (should optionally not be included)

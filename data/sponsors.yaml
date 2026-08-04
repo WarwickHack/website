@@ -1,0 +1,18 @@
+# Sponsors, grouped into tiers listed highest -> lowest.
+#
+# Tiers are keyed tier0, tier1, ... on purpose: the public-facing name
+# (`label`) can change year to year without renaming keys or touching code.
+# The template sizes tiers by their order in this list (first = largest).
+#
+# Expected shape:
+#   tiers:
+#     - id: tier0
+#       label: <what visitors see, e.g. "Title Sponsor">
+#       sponsors:
+#         - id:    <unique slug, referenced by title_sponsor_id in site.yaml>
+#           name:  <display name>
+#           logo:  <filename in static/img/sponsors/, or "" for text>
+#           url:   <link>
+#           blurb: <optional paragraph, mainly for the higher tiers>
+
+tiers: []

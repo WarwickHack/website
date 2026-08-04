@@ -1,0 +1,15 @@
+# The schedule. Both days shown side by side; should be easily editable live on the day.
+#
+# Expected shape:
+#   provisional: <true to show a "subject to change" note>
+#   days:
+#     - label:  <e.g. "Day 1">
+#       date:   <e.g. "Sat 7 Nov">
+#       events:
+#         - time:     <e.g. "09:00">
+#           title:    <what it is>
+#           location: <room, or "" to hide>
+#           type:     <used for colour-coding; define the set you want
+#                      and add a matching colour in main.css>
+
+days: []

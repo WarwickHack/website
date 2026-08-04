@@ -1,0 +1,45 @@
+/* ============================================================
+   WHACK styles
+
+   Section blocks below mirror the partials in layouts/partials/,
+   so each person styles their own section here and merge conflicts
+   stay rare. Keep your CSS inside your own block.
+   ============================================================ */
+
+
+/* --- Design tokens -------------------------------------------
+   Brand colours, fonts, spacing scale as CSS custom properties.
+   Shared — coordinate before editing.
+   ------------------------------------------------------------ */
+:root {
+}
+
+
+/* --- Base / reset --------------------------------------------
+   Element defaults, typography basics, .wrap container, buttons.
+   Shared — coordinate before editing.
+   ------------------------------------------------------------ */
+
+
+/* --- Navbar --------------------------------------------------- */
+
+
+/* --- Hero ----------------------------------------------------- */
+
+
+/* --- About ---------------------------------------------------- */
+
+
+/* --- Schedule ------------------------------------------------- */
+
+
+/* --- Sponsors ------------------------------------------------- */
+
+
+/* --- FAQ ------------------------------------------------------ */
+
+
+/* --- Organisers ----------------------------------------------- */
+
+
+/* --- Footer --------------------------------------------------- */
