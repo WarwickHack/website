@@ -1,8 +1,8 @@
 # WHACK website
 
 Static site built with [Hugo](https://gohugo.io).
-
-Content that changes year to year lives in `data/` as YAML, so the site can be updated without editing templates.
+No back-end maintenance or deployment - just a static site with easy data modification.
+Content that changes year to year lives in `data/` as YAML, so the site can be updated without editing templates. 
 
 ## Running it
 
