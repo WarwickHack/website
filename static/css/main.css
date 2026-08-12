@@ -34,6 +34,27 @@
 
 
 /* --- Sponsors ------------------------------------------------- */
+.sponsor-group {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.sponsor-logo {
+   width: 100px;
+   height: 60px;
+   margin-right: 10px;
+}
+
+.sponsor-logo img {
+   width: 100%;  
+   height: auto; 
+   display: block;
+}
+
+.sponsor-blurb p {
+     max-width: 75ch;
+}
 
 
 /* --- FAQ ------------------------------------------------------ */

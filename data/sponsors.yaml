@@ -22,20 +22,30 @@ tiers:
     sponsors:
       - id: 0
         name: "Marshall Wace"
-        logo: static/img/sponsors/mwace.jpg
+        logo: img/sponsors/mwace.png
         url: https://www.mwam.com/about-us/
         blurb: "Temporary MWace Blurb"
       - id: 1
-        name: "Sponsor 2"
-        logo: static/img/sponsors/sponsor2.jpg
-        url: www.bing.com
-        blurb: "Temporary Blurb 2"
+        name: "Capital One"
+        logo: img/sponsors/capitalone.png
+        url: https://www.capitalone.com/about/
+        blurb: |
+          We're on a mission: to change banking for good - one good thing at a time. You might think of us as a credit card company, but we're just as much a technology business.
+          
+          And we're here to make a positive difference - to our customers, our colleagues and society as a whole. Join us and you'll get to make a real and valued contribution to wide-ranging projects that have a meaningful impact on people's lives.
+          
+          You'll get great training and, as new doors open, there'll be no limits to what you can achieve. Just look at our CEO, Lucy Hagues, who started out on our Graduate Programme and now leads the UK business
   - id: tier1
     label: "Silver Sponsor"
-    highPriority: false
+    highPriority: true
     sponsors:
       - id: 0
         name: "Bloomberg"
-        logo: static/img/sponsors/bloomberg.jpg
+        logo: img/sponsors/bloomberg.png
         url: https://www.bloomberg.com/company/
         blurb: "Silver Blurb 1"
+      - id: 1
+        name: "Netcraft"
+        logo: img/sponsors/netcraft.png
+        url: https://www.netcraft.com/company/about-us
+        blurb: Netcraft provides cybercrime disruption and internet data intelligence services, protecting organisations and users worldwide.
