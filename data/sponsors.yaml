@@ -15,4 +15,27 @@
 #           url:   <link>
 #           blurb: <optional paragraph, mainly for the higher tiers>
 
-tiers: []
+tiers: 
+  - id: tier0
+    label: "Gold Sponsor"
+    highPriority: true
+    sponsors:
+      - id: 0
+        name: "Marshall Wace"
+        logo: static/img/sponsors/mwace.jpg
+        url: https://www.mwam.com/about-us/
+        blurb: "Temporary MWace Blurb"
+      - id: 1
+        name: "Sponsor 2"
+        logo: static/img/sponsors/sponsor2.jpg
+        url: www.bing.com
+        blurb: "Temporary Blurb 2"
+  - id: tier1
+    label: "Silver Sponsor"
+    highPriority: false
+    sponsors:
+      - id: 0
+        name: "Bloomberg"
+        logo: static/img/sponsors/bloomberg.jpg
+        url: https://www.bloomberg.com/company/
+        blurb: "Silver Blurb 1"

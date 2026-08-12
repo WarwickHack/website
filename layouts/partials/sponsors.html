@@ -2,4 +2,17 @@
      Tiers rendered in order, descending prominence. Skip empty tiers.
      Reads: data/sponsors.yaml */}}
 <section class="section" id="sponsors">
+
+     {{ range site.Data.sponsors.tiers }}
+       {{ $showBlurb := .highPriority }}
+          <h2>{{ .label }}</h3>
+          <h3> Sponsors: </h2>
+               {{ range .sponsors}}
+                    <h4> {{.name}} </h4>
+                    <a href={{.url}}> Company Site </a>
+                    {{ if $showBlurb}} {{/* Only show blurb for high priority tiers */}}
+                    <p> Blurb: {{.blurb}} </p>
+                    {{ end}}
+               {{ end }}
+     {{ end }}
 </section>
