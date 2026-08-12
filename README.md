@@ -4,7 +4,7 @@ Static site built with [Hugo](https://gohugo.io).
 No back-end maintenance or deployment - just a static site with easy data modification.
 Content that changes year to year lives in `data/` as YAML, so the site can be updated without editing templates. 
 
-## Running it
+## Running the website
 
 Install Hugo:
 
