@@ -10,3 +10,18 @@
 #   tickets           – label / url / state (enabled | disabled | soldout)
 #   event_live        – true during the event to reveal the live page link
 #   socials           – email / instagram / linkedin / discord (should optionally not be included)
+
+event_number: 26
+date_text: "7th - 8th November"
+location: "The International Digital Laboratory (IDL)"
+starts_at:        # pending schedule
+ends_at:          # pending schedule
+title_sponsor_id: # Pending info
+tickets: disabled
+event_live: false
+socials:
+  email:     mailto:contact@warwickhack.co.uk
+  instagram: https://www.instagram.com/warwickhacks/
+  linkedin:  https://www.linkedin.com/company/warwickhacks/
+  # Add when server is ready
+  # discord:   ""
