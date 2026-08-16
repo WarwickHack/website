@@ -11,41 +11,57 @@
 #       sponsors:
 #         - id:    <unique slug, referenced by title_sponsor_id in site.yaml>
 #           name:  <display name>
-#           logo:  <filename in static/img/sponsors/, or "" for text>
+#           logo:  <filename in static/img/sponsors/, in the form img/sponsors/... or "" for text>
 #           url:   <link>
 #           blurb: <optional paragraph, mainly for the higher tiers>
+
+# Note: Sponsor images are currently temporary/placeholders, pending official media.
 
 tiers: 
   - id: tier0
     label: "Gold Sponsor"
-    highPriority: true
+    showBlurb: true
     sponsors:
-      - id: 0
+      - id: marshall-wace
         name: "Marshall Wace"
-        logo: img/sponsors/mwace.png
-        url: https://www.mwam.com/about-us/
+        logo: img/sponsors/marshall-wace/logo.png
+        url: https://www.mwam.com/
         blurb: "Temporary MWace Blurb"
-      - id: 1
+      - id: capital-one
         name: "Capital One"
-        logo: img/sponsors/capitalone.png
-        url: https://www.capitalone.com/about/
+        logo: img/sponsors/capital-one/logo.png
+        url: https://www.capitalone.com/
         blurb: |
           We're on a mission: to change banking for good - one good thing at a time. You might think of us as a credit card company, but we're just as much a technology business.
           
           And we're here to make a positive difference - to our customers, our colleagues and society as a whole. Join us and you'll get to make a real and valued contribution to wide-ranging projects that have a meaningful impact on people's lives.
           
           You'll get great training and, as new doors open, there'll be no limits to what you can achieve. Just look at our CEO, Lucy Hagues, who started out on our Graduate Programme and now leads the UK business
+      - id: incident-io
+        name: "Incident.io"
+        logo: img/sponsors/incident-io/logo.png
+        url: https://incident.io/
+        blurb: |
+          incident.io is the single place you go when things go wrong - backed by a $62m Series B and trusted by companies like OpenAI, Lovable, and Netflix.
+          We help engineering teams respond to and learn from incidents, minimise downtime, and focus on solving the problems that matter.
+      - id: brevan-howard
+        name: "Brevan Howard"
+        logo: img/sponsors/brevan-howard/logo.png
+        url: https://www.brevanhoward.com/
+        blurb: |
+         Founded in 2002, Brevan Howard is a leading global alternative investment management platform, specialising in global macro and digital assets.
+         Our reputation, built up over nearly two decades, is founded on the quality of our exceptional people, our best-in-class technology and wide range of dynamic investment products offered within a rigorous institutional framework.
   - id: tier1
     label: "Silver Sponsor"
-    highPriority: true
+    showBlurb: true
     sponsors:
-      - id: 0
+      - id: bloomberg
         name: "Bloomberg"
-        logo: img/sponsors/bloomberg.png
+        logo: img/sponsors/bloomberg/logo.png
         url: https://www.bloomberg.com/company/
-        blurb: "Silver Blurb 1"
-      - id: 1
+        blurb: "Temporary Bloomberg Blurb"
+      - id: netcraft
         name: "Netcraft"
-        logo: img/sponsors/netcraft.png
+        logo: img/sponsors/netcraft/logo.png
         url: https://www.netcraft.com/company/about-us
         blurb: Netcraft provides cybercrime disruption and internet data intelligence services, protecting organisations and users worldwide.

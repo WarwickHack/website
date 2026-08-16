@@ -4,7 +4,7 @@
 <section class="section" id="sponsors">
 
      {{ range hugo.Data.sponsors.tiers }}
-       {{ $showBlurb := .highPriority }}
+       {{ $showBlurb := .showBlurb }}
           <h2>{{ .label }}</h2>
           <h3> Sponsors: </h3>
                {{ range .sponsors}}
