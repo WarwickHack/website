@@ -287,6 +287,164 @@ img {
 }
 
 
+/* --- Countdown ------------------------------------------------ */
+#countdown {
+     --slant-bg: var(--light-bg);
+     background-color: var(--light-bg);
+     color: var(--light-ink);
+     padding: var(--section-padding) var(--side-padding);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Oswald", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: bold;
+
+     .group {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+
+          #time-to-text {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin-bottom: 20px;
+
+               .text-body {
+                    font-size: 96px;
+                    text-align: center;
+                    text-decoration: underline;
+                    text-decoration-color: #ff6347;
+                    text-decoration-thickness: 6px;
+                    text-underline-offset: 5px;
+
+                    @media screen and (max-width: 600px) {
+                         font-size: 64px;
+                    }
+               }
+          }
+
+          #timer {
+               background-image: linear-gradient(to right, #ebf2ff, #f5f0fa, #ffe9f4), linear-gradient(to right, var(--blue), var(--purple), var(--pink));
+               border: double 2px transparent;
+               background-origin: border-box;
+               background-clip: padding-box, border-box;
+               border-radius: var(--radius);
+               display: flex;
+               gap: 32px;
+               align-items: stretch;
+               padding: 12px;
+               font-size: 128px;
+               line-height: 1.2;
+
+               #numbers {
+                    display: flex;
+                    gap: 32px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    background-image: linear-gradient(to right, var(--blue), var(--purple), var(--pink));
+                    background-clip: text;
+                    color: transparent;
+
+                    .number {
+                         color: var(--light-ink);
+
+                         span {
+                              display: inline-block;
+                              width: 1ch;
+                              text-align: center;
+                         }
+                    }
+               }
+
+               #numbers > span {
+                    display: flex;
+                    gap: 32px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+               }
+
+               .corner-dots:first-of-type svg {
+                    fill: var(--blue);
+               }
+
+               .corner-dots:last-of-type svg {
+                    fill: var(--pink);
+               }
+          }
+
+          #buttons {
+               display: flex;
+               gap: 24px;
+
+               a {
+                    width: 100%;
+                    padding: 12px;
+                    border-radius: var(--radius);
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-between;
+                    font-size: 40px;
+                    transition: background-color 0.3s;
+
+                    .corner-dots {
+                         height: 100px;
+                    }
+               }
+
+               a.tickets {
+                    color: #ffffff;
+                    background-color: var(--light-ink);
+
+                    .corner-dots svg {
+                         fill: #ffffff;
+                    }
+               }
+
+               a.tickets:hover {
+                    background-color: #232323;
+               }
+
+               a.learn-more {
+                    color: var(--light-ink);
+                    background-color: var(--light-card);
+                    border: 2px solid var(--light-border);
+
+                    .corner-dots svg {
+                         fill: var(--light-border);
+                    }
+               }
+
+               a.learn-more:hover {
+                    background-color: #EAEAEA;
+               }
+          }
+     }
+
+     @media screen and (max-width: 900px) {
+          #timer {
+               font-size: 64px !important;
+               gap: 0 !important;
+               justify-content: space-between;
+          }
+
+          #buttons {
+               flex-wrap: wrap;
+          }
+
+          #buttons a {
+               font-size: 32px !important;
+          }
+
+          #buttons a .corner-dots {
+               height: 64px !important;
+          }
+     }
+}
+
+
 /* --- About ---------------------------------------------------- */
 #about {
      display: flex;

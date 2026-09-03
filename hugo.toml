@@ -2,7 +2,11 @@
 
 baseURL = "https://warwickhack.co.uk/"
 languageCode = "en-gb"
+timeZone = "Europe/London"
 title = "WHACK"
 
 # We don't use these page types
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[markup.goldmark.renderer]
+unsafe = true

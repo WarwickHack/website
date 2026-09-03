@@ -1,5 +1,24 @@
 {{/* ABOUT
      What WHACK is, plus photos from previous years.
-     Mostly static copy — no data file. */}}
+     Copy comes from data/site.yaml for ease of update year-to-year. */}}
 <section class="section" id="about">
+     {{ range site.Data.site.about }}
+          <div class="row">
+               <div class="info">
+                    {{ partial "corner-dots.html" . }}
+
+                    <div class="content">
+                         <h1>{{ .heading | safeHTML }}</h1>
+                         {{ .body | $.RenderString (dict "display" "block") }}
+                    </div>
+
+                    {{ partial "corner-dots.html" . }}
+               </div>
+
+               <div class="image-box {{ .image }}">
+                    {{ partial "corner-dots.html" . }}
+                    {{ partial "corner-dots.html" . }}
+               </div>
+          </div>
+     {{ end }}
 </section>

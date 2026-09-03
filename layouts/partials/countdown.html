@@ -1,0 +1,45 @@
+<section class="slanted" id="countdown">
+     <div class="group">
+          {{ with site.Data.site.starts_at }}
+               <div id="time-to-text">
+                    <h1 id="time-to-text-body" class="text-body"></h1>
+               </div>
+               <div id="timer"
+                    data-starts-at="{{ time.Format "2006-01-02T15:04:05Z07:00" . }}"
+                    data-ends-at="{{ with site.Data.site.ends_at }}{{ time.Format "2006-01-02T15:04:05Z07:00" . }}{{ end }}">
+                    {{ partial "corner-dots.html" . }}
+
+                    <div id="numbers">
+                         <span>
+                              <span><span id="days" class="number"></span>d</span>
+                              <span><span id="hours" class="number"></span>h</span>
+                         </span>
+                         <span>
+                              <span><span id="minutes" class="number"></span>m</span>
+                              <span><span id="seconds" class="number"></span>s</span>
+                         </span>
+                    </div>
+
+                    {{ partial "corner-dots.html" . }}
+               </div>
+          {{ end }}
+
+          <div id="buttons">
+               {{ with site.Data.site.tickets }}
+                    {{ if ne .state "disabled" }}
+                         <a class="tickets" href="{{ .url }}">
+                              {{ partial "corner-dots.html" $ }}
+                              {{ .label }}
+                              {{ partial "corner-dots.html" $ }}
+                         </a>
+                    {{ end }}
+               {{ end }}
+
+               <a class="learn-more" href="#about">
+                    {{ partial "corner-dots.html" . }}
+                    LEARN MORE
+                    {{ partial "corner-dots.html" . }}
+               </a>
+          </div>
+     </div>
+</section>

@@ -24,3 +24,52 @@ nav.querySelectorAll("a").forEach(link =>  {
         }
     });
 });
+
+const timer = document.querySelector("#timer");
+
+if (timer) {
+    const startsAt = new Date(timer.dataset.startsAt);
+    const endsAt = new Date(timer.dataset.endsAt);
+
+    const daysElem = document.querySelector("#days");
+    const hoursElem = document.querySelector("#hours");
+    const minutesElem = document.querySelector("#minutes");
+    const secondsElem = document.querySelector("#seconds");
+    const aboutTextElem = document.querySelector("#time-to-text-body");
+
+    const milestones = [
+        { date: startsAt, sign: 1, text: "TIME UNTIL EVENT" },
+        { date: endsAt, sign: 1, text: "TIME UNTIL SUBMISSION" },
+        { date: endsAt, sign: -1, text: "TIME SINCE SUBMISSION" }
+    ].filter(m => !isNaN(m.date));
+
+    function updateCountdown() {
+        const now = new Date();
+        const diffs = milestones.map(m => m.sign * (m.date - now));
+
+        const index = diffs.findIndex(diff => diff >= 0);
+        const chosen = index === -1 ? diffs.length - 1 : index;
+        const diff = Math.max(diffs[chosen], 0);
+
+        aboutTextElem.innerText = milestones[chosen].text;
+
+        const times = [
+            Math.floor(diff / (1000 * 60 * 60 * 24)),
+            Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+            Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+            Math.floor((diff % (1000 * 60)) / 1000)
+        ].map(t => String(t).padStart(2, "0").split(""));
+
+        [daysElem, hoursElem, minutesElem, secondsElem].forEach((elem, i) => {
+            elem.innerHTML = "";
+            times[i].forEach(digit => {
+                const span = document.createElement("span");
+                span.innerText = digit;
+                elem.appendChild(span);
+            });
+        });
+    }
+
+    setInterval(updateCountdown, 333);
+    updateCountdown();
+}
