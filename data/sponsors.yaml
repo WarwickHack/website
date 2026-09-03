@@ -19,7 +19,7 @@
 
 tiers: 
   - id: tier0
-    label: "Gold Sponsor"
+    label: "Gold Sponsors"
     showBlurb: true
     sponsors:
       - id: marshall-wace
@@ -52,7 +52,7 @@ tiers:
          Founded in 2002, Brevan Howard is a leading global alternative investment management platform, specialising in global macro and digital assets.
          Our reputation, built up over nearly two decades, is founded on the quality of our exceptional people, our best-in-class technology and wide range of dynamic investment products offered within a rigorous institutional framework.
   - id: tier1
-    label: "Silver Sponsor"
+    label: "Silver Sponsors"
     showBlurb: true
     sponsors:
       - id: bloomberg
