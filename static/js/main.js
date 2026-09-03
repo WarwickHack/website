@@ -29,6 +29,7 @@ const timer = document.querySelector("#timer");
 
 if (timer) {
     const startsAt = new Date(timer.dataset.startsAt);
+    const hackingStartsAt = new Date(timer.dataset.hackingStartsAt);
     const endsAt = new Date(timer.dataset.endsAt);
 
     const daysElem = document.querySelector("#days");
@@ -39,6 +40,7 @@ if (timer) {
 
     const milestones = [
         { date: startsAt, sign: 1, text: "TIME UNTIL EVENT" },
+        { date: hackingStartsAt, sign: 1, text: "TIME UNTIL HACKING BEGINS" },
         { date: endsAt, sign: 1, text: "TIME UNTIL SUBMISSION" },
         { date: endsAt, sign: -1, text: "TIME SINCE SUBMISSION" }
     ].filter(m => !isNaN(m.date));

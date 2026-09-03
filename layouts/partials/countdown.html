@@ -6,7 +6,8 @@
                </div>
                <div id="timer"
                     data-starts-at="{{ time.Format "2006-01-02T15:04:05Z07:00" . }}"
-                    data-ends-at="{{ with site.Data.site.ends_at }}{{ time.Format "2006-01-02T15:04:05Z07:00" . }}{{ end }}">
+                    data-hacking-starts-at="{{ with site.Data.site.hacking_starts_at }}{{ time.Format "2006-01-02T15:04:05Z07:00" . }}{{ end }}"
+                    data-ends-at="{{ with site.Data.site.hacking_ends_at }}{{ time.Format "2006-01-02T15:04:05Z07:00" . }}{{ end }}">
                     {{ partial "corner-dots.html" . }}
 
                     <div id="numbers">
