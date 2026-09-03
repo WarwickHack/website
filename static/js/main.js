@@ -75,3 +75,22 @@ if (timer) {
     setInterval(updateCountdown, 333);
     updateCountdown();
 }
+
+const days = document.querySelector("#days-plan");
+const dayButtons = document.querySelectorAll("#days-buttons button");
+
+if (days && dayButtons.length === 2) {
+    const [button1, button2] = dayButtons;
+
+    button1.addEventListener("click", () => {
+        days.classList.remove("flipped");
+        button1.classList.add("active");
+        button2.classList.remove("active");
+    });
+
+    button2.addEventListener("click", () => {
+        days.classList.add("flipped");
+        button1.classList.remove("active");
+        button2.classList.add("active");
+    });
+}

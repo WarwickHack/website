@@ -12,4 +12,89 @@
 #           type:     <used for colour-coding; define the set you want
 #                      and add a matching colour in main.css>
 
-days: []
+provisional: true
+
+days:
+  - label: "Day 1"
+    date: "Sat 7 Nov"
+    events:
+      - time: "09:00"
+        title: "Arrivals Open"
+        location: "TBD"
+        type: TBD
+      - time: "09:45"
+        title: "Arrivals Close"
+        location: "TBD"
+        type: TBD
+      - time: "10:00"
+        title: "Opening Ceremony"
+        location: "OC0.03"
+        type: TBD
+      - time: "11:00"
+        title: "Official Hacking Begins"
+        location: "TBD"
+        type: TBD
+      - time: "12:00"
+        title: "Lunch Served"
+        location: "TBD"
+        type: TBD
+      - time: "13:00"
+        title: "Sponsor Talk (TBD)"
+        location: "TBD"
+        type: TBD
+      - time: "14:00"
+        title: "Sponsor Talk (TBD)"
+        location: "TBD"
+        type: TBD
+      - time: "15:00"
+        title: "Sponsor Talk (TBD)"
+        location: "TBD"
+        type: TBD
+      - time: "16:00"
+        title: "Sponsor Talk (TBD)"
+        location: "TBD"
+        type: TBD
+      - time: "17:00"
+        title: "Sponsor Event (TBC)"
+        location: "TBD"
+        type: TBD
+      - time: "19:30"
+        title: "Dinner Served"
+        location: "TBD"
+        type: TBD
+      - time: "21:00"
+        title: "IRL CTF Event"
+        location: "TBD"
+        type: TBD
+      - time: "22:00"
+        title: "Evening Events (TBC)"
+        location: "TBD"
+        type: TBD
+
+  - label: "Day 2"
+    date: "Sun 8 Nov"
+    events:
+      - time: "01:00"
+        title: "1 Hour Hackathon"
+        location: "TBD"
+        type: TBD
+      - time: "07:00"
+        title: "Breakfast Served"
+        location: "TBD"
+        type: TBD
+      - time: "11:00"
+        title: "Submissions Close"
+        location: "TBD"
+        type: TBD
+      - time: "11:30"
+        title: "Lunch Served"
+        location: "TBD"
+        type: TBD
+      - time: "12:30"
+        title: "Judging Period Begins"
+        location: "TBD"
+        type: TBD
+      - time: "17:00"
+        title: "Closing Ceremony"
+        location: "TBD"
+        type: TBD

@@ -2,5 +2,55 @@
      Both days side by side on desktop, stacked on mobile (please do check).
      Events colour-coded by `type`. The most important section for attendees.
      Reads: data/schedule.yaml */}}
+
+<!-- TODO: Integrate colours for events based on type -->
 <section class="section" id="schedule">
+     <div id="schedule-heading">
+          <div id="days-buttons">
+               {{ range $i, $day := site.Data.schedule.days }}
+                    <button{{ if eq $i 0 }} class="active"{{ end }}>
+                         {{ partial "corner-dots.html" $ }}
+                         {{ $day.label | upper }}
+                         {{ partial "corner-dots.html" $ }}
+                    </button>
+               {{ end }}
+          </div>
+
+          <h1>SCHEDULE</h1>
+
+          {{ if site.Data.schedule.provisional }}
+               <p style="opacity: 0.25; text-align: center;">Provisional, subject to change once events are confirmed with our sponsors.</p>
+          {{ end }}
+     </div>
+
+     <div id="days-plan">
+          <div id="days-inner">
+               {{ range $di, $day := site.Data.schedule.days }}
+                    {{ $dayId := printf "day%d" (add $di 1) }}
+                    {{ $n := len $day.events }}
+                    <div id="{{ $dayId }}" class="day">
+                         <div class="events">
+                              {{ range $i, $event := $day.events }}
+                                   <div class="row">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M3.53553 0.707142L0.707107 3.53557C0.316582 3.92609 0.316582 4.55926 0.707107 4.94978L3.53553 7.77821C3.92606 8.16873 4.55922 8.16873 4.94975 7.77821L7.77817 4.94978C8.1687 4.55926 8.1687 3.92609 7.77817 3.53557L4.94975 0.707142C4.55922 0.316618 3.92606 0.316618 3.53553 0.707142Z"/>
+                                        </svg>
+                                        <span class="time">{{ $event.time }}</span>
+                                        <span class="white">{{ $event.title }}</span>
+                                        {{ with $event.location }}<span class="location">{{ . }}</span>{{ end }}
+                                   </div>
+
+                                   {{ if lt (add $i 1) $n }}
+                                        <div class="row">
+                                             <svg class="column" width="5" height="33" viewBox="0 0 5 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M4.24268 2.48535C4.24268 1.38078 3.34725 0.485352 2.24268 0.485352C1.13811 0.485352 0.242676 1.38078 0.242676 2.48535V30.4854C0.242676 31.5899 1.13811 32.4854 2.24268 32.4854C3.34725 32.4854 4.24268 31.5899 4.24268 30.4854V2.48535Z"/>
+                                             </svg>
+                                        </div>
+                                   {{ end }}
+                              {{ end }}
+                         </div>
+                    </div>
+               {{ end }}
+          </div>
+     </div>
 </section>
