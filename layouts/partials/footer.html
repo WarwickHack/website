@@ -1,6 +1,24 @@
 {{/* FOOTER
-     Closing call-to-action, logo, social links.
-     Shared file — coordinate before editing.
-     Reads: data/site.yaml (socials, tickets) */}}
-<footer class="footer">
+     Logo bottom left, social links bottom right.
+     Shared file - coordinate before editing.
+     Reads: data/site.yaml (socials) */}}
+{{ $socials := hugo.Data.site.socials }}
+{{ $labels := dict "email" "Email" "instagram" "Instagram" "linkedin" "LinkedIn" "discord" "Discord" }}
+
+<footer class="footer slanted">
+     <a href="#top">{{ partial "logo.html" . }}</a>
+     <nav>
+          <ul>
+               {{ range $platform := slice "email" "instagram" "linkedin" "discord" }}
+                    {{ with index $socials $platform }}
+                         <li>
+                              <a href="{{ . }}" aria-label="{{ index $labels $platform }}"
+                                 {{ if not (hasPrefix . "mailto:") }}target="_blank" rel="noopener"{{ end }}>
+                                   {{ partial "social-link.html" $platform }}
+                              </a>
+                         </li>
+                    {{ end }}
+               {{ end }}
+          </ul>
+     </nav>
 </footer>
