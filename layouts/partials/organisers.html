@@ -2,5 +2,44 @@
      Compact grid of photo + name + role. Deliberately small footprint,
      and not linked from the navbar.
      Reads: data/organisers.yaml */}}
+{{ $organisers := hugo.Data.organisers.organisers }}
+
 <section class="section" id="organisers">
+     <h1><span>YOUR ORGANISERS</span></h1>
+
+     {{ with $organisers }}
+          <div id="organiser-grid">
+               {{ range $o := . }}
+                    <div class="person">
+                         {{/* Cropped and resized at build time (see the mounts in
+                              hugo.toml), so a straight-off-the-phone photo still
+                              comes out as a ~2x card-sized WebP. Missing file:
+                              fall through to the icon rather than break the build. */}}
+                         {{ $photo := "" }}
+                         {{ with $o.photo }}
+                              {{ $photo = resources.Get . }}
+                         {{ end }}
+
+                         <div class="img">
+                              {{ partial "corner-dots.html" . }}
+
+                              {{ with $photo }}
+                                   {{ $card := .Fill "520x520 webp q85 Smart" }}
+                                   <img src="{{ $card.RelPermalink }}" width="{{ $card.Width }}" height="{{ $card.Height }}" alt="{{ $o.name }}" loading="lazy" decoding="async">
+                              {{ else }}
+                                   {{/* No photo yet: generic silhouette stands in */}}
+                                   <span class="no-photo">{{ partial "icon-person.html" . }}</span>
+                              {{ end }}
+
+                              {{ partial "corner-dots.html" . }}
+                         </div>
+
+                         <div class="person-info">
+                              <span class="name">{{ .name }}</span>
+                              <span class="role">{{ .role }}</span>
+                         </div>
+                    </div>
+               {{ end }}
+          </div>
+     {{ end }}
 </section>

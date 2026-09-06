@@ -1,13 +1,13 @@
 <section class="slanted" id="countdown">
      <div class="group">
-          {{ with site.Data.site.starts_at }}
+          {{ with hugo.Data.site.starts_at }}
                <div id="time-to-text">
                     <h1 id="time-to-text-body" class="text-body"></h1>
                </div>
                <div id="timer"
                     data-starts-at="{{ time.Format "2006-01-02T15:04:05Z07:00" . }}"
-                    data-hacking-starts-at="{{ with site.Data.site.hacking_starts_at }}{{ time.Format "2006-01-02T15:04:05Z07:00" . }}{{ end }}"
-                    data-ends-at="{{ with site.Data.site.hacking_ends_at }}{{ time.Format "2006-01-02T15:04:05Z07:00" . }}{{ end }}">
+                    data-hacking-starts-at="{{ with hugo.Data.site.hacking_starts_at }}{{ time.Format "2006-01-02T15:04:05Z07:00" . }}{{ end }}"
+                    data-ends-at="{{ with hugo.Data.site.hacking_ends_at }}{{ time.Format "2006-01-02T15:04:05Z07:00" . }}{{ end }}">
                     {{ partial "corner-dots.html" . }}
 
                     <div id="numbers">
@@ -26,7 +26,7 @@
           {{ end }}
 
           <div id="buttons">
-               {{ with site.Data.site.tickets }}
+               {{ with hugo.Data.site.tickets }}
                     {{ if ne .state "disabled" }}
                          <a class="tickets" href="{{ .url }}">
                               {{ partial "corner-dots.html" $ }}

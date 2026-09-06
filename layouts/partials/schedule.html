@@ -7,7 +7,7 @@
 <section class="section" id="schedule">
      <div id="schedule-heading">
           <div id="days-buttons">
-               {{ range $i, $day := site.Data.schedule.days }}
+               {{ range $i, $day := hugo.Data.schedule.days }}
                     <button{{ if eq $i 0 }} class="active"{{ end }}>
                          {{ partial "corner-dots.html" $ }}
                          {{ $day.label | upper }}
@@ -18,14 +18,14 @@
 
           <h1>SCHEDULE</h1>
 
-          {{ if site.Data.schedule.provisional }}
+          {{ if hugo.Data.schedule.provisional }}
                <p style="opacity: 0.25; text-align: center;">Provisional, subject to change once events are confirmed with our sponsors.</p>
           {{ end }}
      </div>
 
      <div id="days-plan">
           <div id="days-inner">
-               {{ range $di, $day := site.Data.schedule.days }}
+               {{ range $di, $day := hugo.Data.schedule.days }}
                     {{ $dayId := printf "day%d" (add $di 1) }}
                     {{ $n := len $day.events }}
                     <div id="{{ $dayId }}" class="day">

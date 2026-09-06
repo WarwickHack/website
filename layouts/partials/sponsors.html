@@ -4,7 +4,7 @@
 <section class="section slanted" id="sponsors">
      <h2>This Year's Sponsors</h2>
 
-     {{ range site.Data.sponsors.tiers }}
+     {{ range hugo.Data.sponsors.tiers }}
           {{ $showBlurb := .showBlurb }}
           {{ $label := .label }}
           {{ with .sponsors }}

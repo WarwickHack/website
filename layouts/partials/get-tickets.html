@@ -1,0 +1,34 @@
+{{/* CALL TO ACTION
+     Closing "what are you waiting for?" block with the tickets button.
+     Always rendered; while tickets are disabled the button is shown greyed
+     out and non-clickable rather than the section disappearing.
+     Reads: data/site.yaml (tickets) */}}
+{{ with hugo.Data.site.tickets }}
+     {{ $disabled := or (eq .state "disabled") (not .url) }}
+
+     <section class="section" id="get-tickets">
+          <h1>
+               {{if ne .state "disabled"}}
+                    <span>WHAT ARE YOU</span>
+                    <span>WAITING FOR?</span>
+               {{ end }}
+          </h1>
+
+          {{ if $disabled }}
+               <div class="cta disabled" aria-disabled="true">
+          {{ else }}
+               <a class="cta" href="{{ .url }}">
+          {{ end }}
+
+               {{/* Wipes away on hover to reveal the gradient underneath. */}}
+               <div class="background-cover"></div>
+
+               <div class="button-content">
+                    {{ partial "corner-dots.html" $ }}
+                    <span>{{ default "TICKETS COMING SOON" .label }}</span>
+                    {{ partial "corner-dots.html" $ }}
+               </div>
+
+          {{ if $disabled }}</div>{{ else }}</a>{{ end }}
+     </section>
+{{ end }}

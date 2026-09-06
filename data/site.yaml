@@ -6,7 +6,7 @@
 #   location          – venue / campus
 #   starts_at         – ISO datetime, event start (arrivals) drives the countdown
 #   hacking_starts_at - ISO datetime, hacking start
-#   hacking_ends_at           – ISO datetime, hacking end
+#   hacking_ends_at   – ISO datetime, hacking end
 #   title_sponsor_id  – id of a sponsor in sponsors.yaml, or "" for none
 #   tickets           – label / url / state (enabled | disabled | soldout)
 #   event_live        – true during the event to reveal the live page link
@@ -23,7 +23,7 @@ hacking_ends_at: 2026-11-08T11:00:00
 
 title_sponsor_id: # Pending info
 tickets:
-  label: ""
+  label: "TICKETS COMING SOON" # Set a label for the get tickets button -> "TICKETS COMING SOON" -> "GET TICKETS" -> "TICKETS SOLD OUT"
   url:   ""
   state: disabled
 event_live: false

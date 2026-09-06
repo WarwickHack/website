@@ -1,9 +1,27 @@
 # The organiser grid/carasouel/your-choice. Rebuilt most years as the team turns over.
 #
+#
 # Expected shape:
 #   organisers:
 #     - name:  <display name>
 #       role:  <short role line>
-#       photo: <filename in static/img/organisers/, or "" for a fallback>
+#       photo: <path in the form img/organisers/<slug>.jpg, or "" for a silhouette>
+#
+# Photos resized by hugo on build
 
-organisers: []
+organisers:
+  - name: Sam Turner
+    role: Logistics & Outreach
+    photo: img/organisers/sam-turner.jpg
+  - name: Edward O'Dwyer
+    role: Publicity Lead
+    photo: img/organisers/edward-odwyer.jpg
+  - name: Jakub Kisielewski
+    role: Treasurer
+    photo: img/organisers/jakub-kisielewski.jpg
+  - name: Seif Ali Esmael
+    role: Sponsor Outreach & Website Design
+    photo: ""
+  - name: Santiago Perez
+    role: Sponsor Outreach & Website Design
+    photo: ""

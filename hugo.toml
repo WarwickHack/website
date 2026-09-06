@@ -10,3 +10,13 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+    excludeFiles = "/img/organisers/**"
+
+  [[module.mounts]]
+    source = "static/img/organisers"
+    target = "assets/img/organisers"
