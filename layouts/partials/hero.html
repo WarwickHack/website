@@ -1,3 +1,5 @@
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 {{/* HERO
      Full-height opener: WHACK <event number>, title-sponsor slot,
      date + location, countdown/status banner, tickets + learn-more buttons.
@@ -6,7 +8,8 @@
      <img src="{{ "img/hero.png" | relURL }}" alt="A room of people coding">
 
      <div>
-          {{ partial "logo.html" . }}
+          <!-- {{ partial "logo.html" . }} -->
+          <span class="logo" id="typewriter"></span>
 
           <h1>HACKATHON</h1>
 
@@ -17,3 +20,22 @@
           </h3>
      </div>
 </section>
+
+<script>
+     const container = document.getElementById('typewriter');
+
+     const finalText = '<WHACK>';
+     container.textContent = finalText;
+     container.style.display = 'inline-block';
+     container.style.width = container.getBoundingClientRect().width + 'px';
+     container.textContent = '';
+
+     const typewriter = new Typewriter(container, {
+          loop: false,
+          delay: 300,
+     });
+     typewriter
+     .typeString('<')
+     .typeString('WHACK')
+     .typeString('>').start();
+</script>
