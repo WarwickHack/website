@@ -35,7 +35,25 @@
                          </div>
 
                          <div class="person-info">
-                              <span class="name">{{ .name }}</span>
+                              <div class="name-row">
+                                   <span class="name">{{ .name }}</span>
+
+                                   {{ if or .github .linkedin }}
+                                        <div class="socials">
+                                             {{ with .github }}
+                                                  <a href="https://github.com/{{ . }}" target="_blank" rel="noopener" aria-label="GitHub">
+                                                       {{ partial "social-link.html" "github" }}
+                                                  </a>
+                                             {{ end }}
+                                             {{ with .linkedin }}
+                                                  <a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                                       {{ partial "social-link.html" "linkedin" }}
+                                                  </a>
+                                             {{ end }}
+                                        </div>
+                                   {{ end }}
+                              </div>
+
                               <span class="role">{{ .role }}</span>
                          </div>
                     </div>
