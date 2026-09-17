@@ -13,14 +13,23 @@ organisers:
   - name: Sam Turner
     role: Logistics & Outreach
     photo: img/organisers/sam-turner.jpg
+    linkedin: stmio
+    github: stmio
   - name: Edward O'Dwyer
-    role: Publicity Lead
+    role: Lead Organiser
+    github: edwardodp
+    linkedin: edward-odwyer
     photo: img/organisers/edward-odwyer.jpg
   - name: Jakub Kisielewski
     role: Treasurer
     photo: img/organisers/jakub-kisielewski.jpg
+    linkedin: jakub-kisielewski-30360b27b
+  - name: Thomas Facos
+    role: Lead Organiser & Treasurer
+    photo: img/organisers/thomas-facos.jpg
+    linkedin: facos
   - name: Seif Ali Esmael
-    role: Sponsor Outreach & Website Design
+    role: Organiser & Website Design
     photo: img/organisers/seif-esmael.jpg
     github: seifaliesmael
     linkedin: seifaliesmael
@@ -32,8 +41,39 @@ organisers:
   - name : Reyhan Kothari
     role: Organiser
     photo: img/organisers/reyhan-kothari.jpg
+    github: reyhankothari
+    linkedin: reyhan-kothari-2111a92bb
   - name: Szymon Galutowski
     role: Organiser
     photo: img/organisers/szymon-galutowski.jpg
     github: szymonator
     linkedin: szymon-galutowski
+  - name: Joseph Lawler
+    role: Organiser
+    linkedin: joseph-lawler-222a2638a
+    github: CamoRoll
+    photo: img/organisers/joseph-lawler.jpg
+  - name: Josh Beiraghdar
+    role: Organiser
+    linkedin: josh-beira
+    github: joshbeira
+    photo: img/organisers/josh-beira.jpg
+  - name: Lanzo Raj Muthu Amirtharaj
+    role: Organiser
+    linkedin: lanzoami
+    github: lanzoami
+    photo: img/organisers/lanzo-amirtharaj.jpg
+  - name: Laurence Howe
+    role: Organiser
+    linkedin: laurence-howe-083124301
+    github: laurenceH-coder
+    photo: img/organisers/laurence-howe.jpg
+  - name: Duc Tran
+    role: Logistics Organiser
+    linkedin: tran-minh-duc-74811b178
+    github: Duc5
+    photo: img/organisers/duc-tran.jpg
+  - name: Kashish Rohit
+    role: Organiser
+    linkedin: kashish-rohit-0738a6224
+    photo: img/organisers/kashish-rohit.jpg
