@@ -26,16 +26,16 @@ organisers:
     github: Jakub-Kisielewski
     linkedin: jakub-kisielewski-30360b27b
   - name: Thomas Facos
-    role: Lead Organiser & Treasurer
+    role: Treasurer
     photo: img/organisers/thomas-facos.jpg
     linkedin: facos
   - name: Seif Ali Esmael
-    role: Organiser & Website Design
+    role: Organiser
     photo: img/organisers/seif-esmael.jpg
     github: seifaliesmael
     linkedin: seifaliesmael
   - name: Ian Santiago Osorio Perez
-    role: Sponsor Outreach & Website Design
+    role: Organiser
     photo: img/organisers/santi-perez.jpg
     github: Severian0
     linkedin: ian-osorio
@@ -49,11 +49,6 @@ organisers:
     photo: img/organisers/szymon-galutowski.jpg
     github: szymonator
     linkedin: szymon-galutowski
-  - name: Joseph Lawler
-    role: Organiser
-    linkedin: joseph-lawler-222a2638a
-    github: CamoRoll
-    photo: img/organisers/joseph-lawler.jpg
   - name: Josh Beiraghdar
     role: Organiser
     linkedin: josh-beira
@@ -70,7 +65,7 @@ organisers:
     github: laurenceH-coder
     photo: img/organisers/laurence-howe.jpg
   - name: Duc Tran
-    role: Logistics Organiser
+    role: Organiser
     linkedin: tran-minh-duc-74811b178
     github: Duc5
     photo: img/organisers/duc-tran.jpg
@@ -78,3 +73,17 @@ organisers:
     role: Organiser
     linkedin: kashish-rohit-0738a6224
     photo: img/organisers/kashish-rohit.jpg
+  - name: Ewan Johnstone
+    role: Organiser
+    linkedin: ewan-johnstone-39283a360
+    github: ej-games
+    photo: img/organisers/ewan-johnstone.jpg
+  - name: Louis Tanak
+    role: Founder & Advisor
+    linkedin: louis-tanak
+    github: ltanak
+  - name: Joshua Fitzmaurice
+    role: Founder & Advisor
+    linkedin: jfitz02
+    github: jfitz02
+    photo: img/organisers/joshua-fitzmaurice.jpg
