@@ -26,7 +26,16 @@ tiers:
         name: "Marshall Wace"
         logo: img/sponsors/marshall-wace/logo.png
         url: https://www.mwam.com/
-        blurb: "Temporary MWace Blurb"
+        blurb: |
+          Marshall Wace is a leading global alternatives investment manager with around $85bn in assets under management, where technology, data and innovation are at the heart of how we solve complex problems and make decisions across global markets.
+          We offer early careers opportunities through our Technology Internship Programme and Technology Graduate Programme. Our Internship Programme gives students hands-on engineering experience through real-world projects across areas such as software engineering, data engineering, infrastructure, DevOps, cyber security, AI-powered automation, trading systems and business intelligence. Our Graduate Programme is an 18–24 month rotational role across multiple engineering teams, including software development, data engineering and infrastructure, offering exposure to different technologies, development practices and business areas.
+
+          Both programmes are designed for high-achieving students and graduates with strong technical and programming skills who are excited to solve complex problems in a fast-paced, collaborative environment.
+
+          Internship roles: https://grnh.se/d4lsxs2a2us
+          
+          Graduate roles: https://grnh.se/pa7t00is2us
+
       - id: capital-one
         name: "Capital One"
         logo: img/sponsors/capital-one/logo.png
@@ -58,8 +67,11 @@ tiers:
       - id: bloomberg
         name: "Bloomberg"
         logo: img/sponsors/bloomberg/logo.png
-        url: https://www.bloomberg.com/company/
-        blurb: "Temporary Bloomberg Blurb"
+        url: https://www.bloomberg.com/company/what-we-do/
+        blurb: |
+          Bloomberg is a global information and technology company. We use our dynamic network of data, ideas and analysis to solve difficult problems. Our customers around the world rely on us to deliver accurate, real-time business and market information that helps them make important financial decisions.
+          
+          Life at Bloomberg is many things, but it’s never dull. We pride ourselves on being open, inclusive and collaborative — and in providing a work environment that inspires our employees to be their best. We’re proud to provide comprehensive healthcare coverage, as well as programs and services to help our employees and their families manage their health, wealth and well-being. We also have exciting perks including fitness and gym reimbursement, commuter savings programs and discounts on products and services.
       - id: netcraft
         name: "Netcraft"
         logo: img/sponsors/netcraft/logo.png
