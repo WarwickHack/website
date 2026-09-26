@@ -39,19 +39,19 @@ days:
         location: "TBD"
         type: TBD
       - time: "13:00"
-        title: "Sponsor Talk (TBD)"
+        title: "Brevan Howard Sponsor Talk"
         location: "TBD"
         type: TBD
       - time: "14:00"
-        title: "Sponsor Talk (TBD)"
+        title: "Marshall Wace Sponsor Talk"
         location: "TBD"
         type: TBD
       - time: "15:00"
-        title: "Sponsor Talk (TBD)"
+        title: "incident.io Sponsor Talk"
         location: "TBD"
         type: TBD
       - time: "16:00"
-        title: "Sponsor Talk (TBD)"
+        title: "Capital One Sponsor Talk"
         location: "TBD"
         type: TBD
       - time: "17:00"
@@ -59,7 +59,7 @@ days:
         location: "TBD"
         type: TBD
       - time: "19:30"
-        title: "Dinner Served"
+        title: "Switch Tournament"
         location: "TBD"
         type: TBD
       - time: "21:00"
