@@ -37,5 +37,10 @@
      typewriter
      .typeString('<')
      .typeString('WHACK')
-     .typeString('>').start();
+     .typeString('>')
+     .callFunction(() => {
+          const cursor = container.querySelector('.Typewriter__cursor');
+          if (cursor) cursor.style.display = 'none';
+     })
+     .start();
 </script>
