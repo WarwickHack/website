@@ -9,6 +9,9 @@
      <a href="#top">{{ partial "logo.html" . }}</a>
      <nav>
           <ul>
+               <li class="coc_link"> 
+                    <a href={{hugo.Data.site.coc_link}}> Code of Conduct </a>
+               </li>
                {{ range $platform := slice "email" "instagram" "linkedin" "discord" }}
                     {{ with index $socials $platform }}
                          <li>

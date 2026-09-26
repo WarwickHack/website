@@ -11,10 +11,12 @@
 #   tickets           – label / url / state (enabled | disabled | soldout)
 #   event_live        – true during the event to reveal the live page link
 #   socials           – email / instagram / linkedin / discord (should optionally not be included)
+#   coc_link          - Code of conduct link
 
 event_number: 26
 date_text: "7th - 8th November"
 location: "The Oculus Building"
+coc_link: "https://www.docs.google.com/document/d/1UFnNq7XWyifnYGZYRPpajuPdlJ_qUGsAqvrwi7adyKA/edit?tab=t.0"
 
 # Format: YYYY-MM-DDTHH:MM:SS
 starts_at: 2026-11-07T09:00:00

@@ -765,7 +765,7 @@ img {
           .container .right { order: 2; }
 
           .title-row {
-               a, .description-container {
+               .container > a, .description-container {
                     display: flex;
                     align-items: stretch;
                     justify-content: space-between;
@@ -784,7 +784,7 @@ img {
                     }
                }
 
-               a:hover { transform: scale(0.98); }
+               .container > a:hover { transform: scale(0.98); }
 
                .description-container {
                     flex: 1;
@@ -815,7 +815,7 @@ img {
                     align-items: center;
                }
 
-               a {
+               .container > a {
                     aspect-ratio: 1 / 1;
                     width: 400px;
                     min-height: 400px;
@@ -834,7 +834,7 @@ img {
                h2 { text-align: center; }
 
                .title-row {
-                    a { width: 100%; }
+                    .container > a { width: 100%; }
 
                     .description-container { width: 100%; }
                }
@@ -1159,6 +1159,12 @@ img {
      margin-bottom: 0 !important;
 
      .logo { font-size: 28px; }
+
+     li.coc_link 
+     {
+          align-self: center;
+          a {color: #AAAAAA}
+     }
 
      ul {
           list-style: none;
