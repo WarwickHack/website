@@ -26,7 +26,7 @@ hacking_ends_at: 2026-11-08T11:00:00
 title_sponsor_id: # Pending info
 tickets:
   label: "GET TICKETS" # Set a label for the get tickets button -> "TICKETS COMING SOON" -> "GET TICKETS" -> "TICKETS SOLD OUT"
-  url:   "https://forms.gle/FANidfmTh5JBjYCf9"
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSeN47sVBysRrDSAO2LerCHukeOwcxh9QPOnbYUklyaLS3nTYg/viewform?usp=header"
   state: enabled
 event_live: false
 socials:
