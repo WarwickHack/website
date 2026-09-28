@@ -26,7 +26,7 @@ hacking_ends_at: 2026-11-08T11:00:00
 title_sponsor_id: # Pending info
 tickets:
   label: "GET TICKETS" # Set a label for the get tickets button -> "TICKETS COMING SOON" -> "GET TICKETS" -> "TICKETS SOLD OUT"
-  url: "https://forms.gle/WwChA6LMevPdMnD98"
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSeN47sVBysRrDSAO2LerCHukeOwcxh9QPOnbYUklyaLS3nTYg/viewform?usp=header"
   state: enabled
 event_live: false
 socials:
@@ -40,10 +40,10 @@ about:
   - heading: 'WAIT, <span class="gradiented">WHACK?</span>'
     image: a
     body: |
-      **Warwick's flagship on-campus hackathon is back for 2025!**
+      **Warwick's flagship on-campus hackathon is back for 2026!**
 
-      Following a huge success with the first ever WHACK last year, we're working
-      hard to make it even better &mdash; and are now opening our doors to <span class="gradiented">**ALL**</span>
+      Following the continued success of WHACK over the past two years, we're working
+      hard to make it even better, and our doors are open to <span class="gradiented">**ALL**</span>
       university students nationwide!
 
       Look forward to free food all weekend, sponsor events, unforgettable
@@ -51,7 +51,6 @@ about:
       to showcase **your own** project all in **24** hours!
 
       Now, all that's left for you to do is bring a laptop, friends, and some creativity.
-      We'll handle the rest.
 
   - heading: 'PROJECT TO <span class="gradiented">PRIZES</span>'
     image: b
@@ -60,7 +59,7 @@ about:
       categories for the chance for your team to win a prize from our pool of
       goodies worth over <span class="gradiented">£6,000</span>!
 
-      Each track sponsor will provide a problem statement, mixed in with some of our own.
+      Each gold sponsor will provide a problem statement, mixed in with some of our own.
 
       We can't wait to see you, your friends, and Warwick's most ingenious
       24-hour creations at WHACK. See you there!
@@ -68,11 +67,12 @@ about:
   - heading: 'TOP <span class="gradiented">INDUSTRY</span> SPONSORS'
     image: c
     body: |
-      **We're proud to be supported annually by top industry names**, and we’re looking for sponsors to join us in powering the next wave of tech talent!
+      **We're proud to be supported by top industry names**, and every year we're
+      joined by companies powering the next wave of tech talent!
 
       WHACK is the perfect opportunity for tech companies and startups to support talented students,
-      and gain access into our pool of brilliant minds in STEM. There are also opportunities throughout
-      the event to host talks and networking events. **We're still open to sponsors for WHACK 2026**, and we would be delighted to hear from you!
+      and gain access to our pool of brilliant minds in STEM. There are also opportunities throughout
+      the event to host talks and networking events.
 
       For students, this is your opportunity to show off your technical skills, build connections with
       employers and use their industry-leading technologies!
