@@ -278,7 +278,7 @@ img {
           align-items: flex-end;
 
           padding: 0;
-          background-image: url("/img/hero-mobile.png");
+          background-image: url("../img/hero-mobile.png");
           background-size: cover;
           background-position: center;
 
@@ -502,9 +502,9 @@ img {
                .corner-dots:last-of-type svg  { fill: var(--pink); }
           }
 
-          .image-box.a { background-image: url("img/gallery/about-0.jpg"), linear-gradient(to right, var(--blue), var(--purple), var(--pink)); }
-          .image-box.b { background-image: url("img/gallery/about-1.jpg"), linear-gradient(to right, var(--blue), var(--purple), var(--pink)); }
-          .image-box.c { background-image: url("img/gallery/about-2.jpg"), linear-gradient(to right, var(--blue), var(--purple), var(--pink)); }
+          .image-box.a { background-image: url("../img/gallery/about-0.jpg"), linear-gradient(to right, var(--blue), var(--purple), var(--pink)); }
+          .image-box.b { background-image: url("../img/gallery/about-1.jpg"), linear-gradient(to right, var(--blue), var(--purple), var(--pink)); }
+          .image-box.c { background-image: url("../img/gallery/about-2.jpg"), linear-gradient(to right, var(--blue), var(--purple), var(--pink)); }
      }
 
      @media screen and (min-width: 800px) {
