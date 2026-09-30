@@ -22,6 +22,13 @@ tiers:
     label: "Gold Sponsors"
     showBlurb: true
     sponsors:
+      - id: brevan-howard
+        name: "Brevan Howard"
+        logo: img/sponsors/brevan-howard/logo.png
+        url: https://www.brevanhoward.com/
+        blurb: |
+         Founded in 2002, Brevan Howard is a leading global alternative investment management platform, specialising in global macro and digital assets.
+         Our reputation, built up over nearly two decades, is founded on the quality of our exceptional people, our best-in-class technology and wide range of dynamic investment products offered within a rigorous institutional framework.
       - id: marshall-wace
         name: "Marshall Wace"
         logo: img/sponsors/marshall-wace/logo.png
@@ -31,9 +38,6 @@ tiers:
           We offer early careers opportunities through our Technology Internship Programme and Technology Graduate Programme. Our Internship Programme gives students hands-on engineering experience through real-world projects across areas such as software engineering, data engineering, infrastructure, DevOps, cyber security, AI-powered automation, trading systems and business intelligence. Our Graduate Programme is an 18–24 month rotational role across multiple engineering teams, including software development, data engineering and infrastructure, offering exposure to different technologies, development practices and business areas.
 
           Both programmes are designed for high-achieving students and graduates with strong technical and programming skills who are excited to solve complex problems in a fast-paced, collaborative environment.
-
-         
-
       - id: capital-one
         name: "Capital One"
         logo: img/sponsors/capital-one/logo.png
@@ -51,13 +55,6 @@ tiers:
         blurb: |
           incident.io is the single place you go when things go wrong - backed by a $62m Series B and trusted by companies like OpenAI, Lovable, and Netflix.
           We help engineering teams respond to and learn from incidents, minimise downtime, and focus on solving the problems that matter.
-      - id: brevan-howard
-        name: "Brevan Howard"
-        logo: img/sponsors/brevan-howard/logo.png
-        url: https://www.brevanhoward.com/
-        blurb: |
-         Founded in 2002, Brevan Howard is a leading global alternative investment management platform, specialising in global macro and digital assets.
-         Our reputation, built up over nearly two decades, is founded on the quality of our exceptional people, our best-in-class technology and wide range of dynamic investment products offered within a rigorous institutional framework.
   - id: tier1
     label: "Silver Sponsors"
     showBlurb: true
