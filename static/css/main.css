@@ -755,6 +755,13 @@ img {
                a:hover { transform: scale(0.98); }
           }
 
+          /* Past sponsors: fixed-size cards that wrap onto new lines */
+          .signature-cards.past-sponsors {
+               flex-wrap: wrap;
+
+               a { flex: 0 1 18%; }
+          }
+
           .container {
                display: flex;
                flex-direction: row-reverse;

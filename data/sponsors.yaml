@@ -81,3 +81,42 @@ tiers:
         logo: img/sponsors/netcraft/logo.png
         url: https://www.netcraft.com/company/about-us
         blurb: Netcraft provides cybercrime disruption and internet data intelligence services, protecting organisations and users worldwide.
+
+# Past sponsors, shown as logo-only cards under "Past Sponsors" in the order listed.
+#
+# Expected shape:
+#   past_sponsors:
+#     - slug:  <unique slug>
+#       image: <path in static/, in the form img/sponsors/past/...>
+#       url:   <link opened when the logo is clicked>
+past_sponsors:
+  - slug: coventry-city-fc
+    image: img/sponsors/past/coventry-city-fc.png
+    url: https://www.ccfc.co.uk/club/vacancies/
+  - slug: fetch-ai
+    image: img/sponsors/past/fetch-ai.svg
+    url: https://fetch.ai
+  - slug: capital-one
+    image: img/sponsors/past/capital-one.jpg
+    url: https://jobs.capitalone.co.uk/earlycareers
+  - slug: ab-initio
+    image: img/sponsors/past/ab-initio.png
+    url: https://www.abinitio.com/en/contact/
+  - slug: logicalis
+    image: img/sponsors/past/logicalis.png
+    url: https://www.uki.logicalis.com/
+  - slug: arm
+    image: img/sponsors/past/arm.png
+    url: https://careers.arm.com
+  - slug: imc
+    image: img/sponsors/past/imc.png
+    url: https://grnh.se/f6159ff2teu
+  - slug: netcraft
+    image: img/sponsors/past/netcraft.png
+    url: https://www.netcraft.com/
+  - slug: brevan-howard
+    image: img/sponsors/past/brevan-howard.png
+    url: https://www.brevanhoward.com/
+  - slug: incident-io
+    image: img/sponsors/past/incident-io.png
+    url: https://incident.io/

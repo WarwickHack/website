@@ -51,4 +51,22 @@
                </div>
           {{ end }}
      {{ end }}
+
+     {{/* Past sponsors: logo-only cards, reads past_sponsors */}}
+     {{ with hugo.Data.sponsors.past_sponsors }}
+          <h2>Past Sponsors</h2>
+          <div class="row">
+               <div class="signature-cards past-sponsors">
+                    {{ range . }}
+                         <a href="{{ .url }}" target="_blank">
+                              {{ partial "corner-dots.html" . }}
+                              <div class="sponsor-container">
+                                   <img src="{{ .image | relURL }}" alt="{{ .slug | humanize }}'s logo">
+                              </div>
+                              {{ partial "corner-dots.html" . }}
+                         </a>
+                    {{ end }}
+               </div>
+          </div>
+     {{ end }}
 </section>
