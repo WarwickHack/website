@@ -43,11 +43,20 @@ tiers:
         logo: img/sponsors/capital-one/logo.png
         url: https://www.capitalone.com/
         blurb: |
-          We're on a mission: to change banking for good - one good thing at a time. You might think of us as a credit card company, but we're just as much a technology business.
+          At Capital One, we’re on a mission to be a force for good in lending. You might think of us as a credit
+          card company. Truth is, we’re just as much a technology business. We issued our very first credit card
+          way back in 1996, and have since grown to become one of the UK’s top ten card providers. From day
+          one, our business has been about helping people succeed with credit. From innovative tools like our
+          QuickCheck eligibility checker, to the way we’re driving positive change across the finance industry. It’
+          s no wonder we’re the only card provider with a 4-star rated credit card from Fairbanking. 
           
-          And we're here to make a positive difference - to our customers, our colleagues and society as a whole. Join us and you'll get to make a real and valued contribution to wide-ranging projects that have a meaningful impact on people's lives.
-          
-          You'll get great training and, as new doors open, there'll be no limits to what you can achieve. Just look at our CEO, Lucy Hagues, who started out on our Graduate Programme and now leads the UK business
+          We’re looking for students with the ability to code (in any programming language) and solve technical problems
+          to join our Technology Graduate and Summer Internship programmes. You might be pushing a mobile
+          feature to millions of users one rotation, fine-tuning a high-traffic API the next, or diagnosing a cloud
+          bottleneck after that. The problems are live, the stack is modern, and the impact is immediate. Join us
+          and you'll get to make a real and valued contribution to wide-ranging projects that have a meaningful
+          impact on people's lives.
+
       - id: incident-io
         name: "Incident.io"
         logo: img/sponsors/incident-io/logo.png
