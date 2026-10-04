@@ -3,9 +3,11 @@
 #
 # Expected shape:
 #   organisers:
-#     - name:  <display name>
-#       role:  <short role line>
-#       photo: <path in the form img/organisers/<slug>.jpg, or "" for a silhouette>
+#     - name:     <display name>
+#       role:     <short role line>
+#       photo:    <path in the form img/organisers/<slug>.jpg, or "" for a silhouette>
+#       linkedin: <linkedin profile ID>   -> i.e linkedin.com/in/{profileID} <- that part
+#       github:   <github profile ID>     -> i.e github.com/{profileID} <- that part
 #
 # Photos resized by hugo on build
 
@@ -29,6 +31,11 @@ organisers:
     role: Treasurer
     photo: img/organisers/thomas-facos.jpg
     linkedin: facos
+  - name: Bharat Haria
+    role: Treasurer
+    photo: img/organisers/bharat-haria.jpg
+    linkedin: bharat-haria-5050b7223
+    github: xohanthetrader
   - name: Seif Ali Esmael
     role: Organiser
     photo: img/organisers/seif-esmael.jpg
