@@ -239,6 +239,15 @@ img {
      h1, h3 { color: #ffffff80; }
      .logo, h1 { line-height: 1.2; }
 
+     /* Hidden <WHACK> sets the size; the typed text is overlaid on top of it. */
+     .typewriter {
+          display: inline-grid;
+          position: relative;
+
+          > [aria-hidden] { visibility: hidden; }
+          #typewriter { position: absolute; inset: 0; }
+     }
+
      h3 {
           display: flex;
           gap: 30px;

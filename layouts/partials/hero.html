@@ -9,7 +9,11 @@
 
      <div>
           <!-- {{ partial "logo.html" . }} -->
-          <span class="logo" id="typewriter"></span>
+          {{/* Hidden copy reserves the final width so the layout doesn't depend on when fonts load. */}}
+          <span class="typewriter">
+               <span class="logo" aria-hidden="true">&lt;WHACK&gt;</span>
+               <span class="logo" id="typewriter"></span>
+          </span>
 
           <h1>HACKATHON</h1>
 
@@ -23,12 +27,6 @@
 
 <script>
      const container = document.getElementById('typewriter');
-
-     const finalText = '<WHACK>';
-     container.textContent = finalText;
-     container.style.display = 'inline-block';
-     container.style.width = container.getBoundingClientRect().width + 'px';
-     container.textContent = '';
 
      const typewriter = new Typewriter(container, {
           loop: false,
