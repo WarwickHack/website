@@ -58,8 +58,12 @@ days:
         title: "Sponsor Event (TBC)"
         location: "TBD"
         type: TBD
-      - time: "19:30"
+      - time: "18:00"
         title: "Switch Tournament"
+        location: "TBD"
+        type: TBD
+      - time: "17:30"
+        title: "Dinner Served"
         location: "TBD"
         type: TBD
       - time: "21:00"
