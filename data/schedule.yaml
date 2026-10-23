@@ -66,16 +66,16 @@ days:
         title: "IRL CTF Event"
         location: "TBD"
         type: TBD
-      - time: "22:00"
-        title: "Evening Events (TBC)"
+      - time: "22:30"
+        title: "1 Hour Hackathon"
         location: "TBD"
         type: TBD
 
   - label: "Day 2"
     date: "Sun 8 Nov"
     events:
-      - time: "01:00"
-        title: "1 Hour Hackathon"
+      - time: "00:00"
+        title: "Overnight Events"
         location: "TBD"
         type: TBD
       - time: "07:00"
