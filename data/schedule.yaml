@@ -12,7 +12,7 @@
 #           type:     <used for colour-coding; define the set you want
 #                      and add a matching colour in main.css>
 
-provisional: true
+provisional: false
 
 days:
   - label: "Day 1"
@@ -55,7 +55,7 @@ days:
         location: "TBD"
         type: TBD
       - time: "17:00"
-        title: "Sponsor Event (TBC)"
+        title: "Speed Networking"
         location: "TBD"
         type: TBD
       - time: "18:00"
@@ -78,8 +78,16 @@ days:
   - label: "Day 2"
     date: "Sun 8 Nov"
     events:
-      - time: "00:00"
-        title: "Overnight Events"
+      - time: "01:00"
+        title: "Karaoke"
+        location: "TBD"
+        type: TBD
+      - time: "02:00"
+        title: "Poker Tournament"
+        location: "TBD"
+        type: TBD
+      - time: "05:00"
+        title: "Pitch-Stupid-Item"
         location: "TBD"
         type: TBD
       - time: "07:00"
