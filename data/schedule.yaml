@@ -20,51 +20,51 @@ days:
     events:
       - time: "09:00"
         title: "Arrivals Open"
-        location: "TBD"
+        location: "Lobby"
         type: TBD
       - time: "09:45"
         title: "Arrivals Close"
-        location: "TBD"
+        location: ""
         type: TBD
       - time: "10:00"
         title: "Opening Ceremony"
-        location: "OC0.03"
+        location: "OC1.05"
         type: TBD
       - time: "11:00"
         title: "Official Hacking Begins"
-        location: "TBD"
+        location: ""
         type: TBD
       - time: "12:00"
         title: "Lunch Served"
-        location: "TBD"
+        location: "OC0.04"
         type: TBD
       - time: "13:00"
         title: "Brevan Howard Sponsor Talk"
-        location: "TBD"
+        location: "OC1.05"
         type: TBD
       - time: "14:00"
-        title: "Marshall Wace Sponsor Talk"
-        location: "TBD"
+        title: "Marshall Wace Workshop"
+        location: "OC0.01"
         type: TBD
       - time: "15:00"
         title: "incident.io Sponsor Talk"
-        location: "TBD"
+        location: "OC1.05"
         type: TBD
       - time: "16:00"
         title: "Capital One Sponsor Talk"
-        location: "TBD"
+        location: "OC1.05"
         type: TBD
       - time: "17:00"
         title: "Speed Networking"
-        location: "TBD"
+        location: "OC0.01"
         type: TBD
       - time: "18:00"
         title: "Switch Tournament"
-        location: "TBD"
+        location: "OC1.05"
         type: TBD
       - time: "19:30"
         title: "Dinner Served"
-        location: "TBD"
+        location: "OC0.04"
         type: TBD
       - time: "21:00"
         title: "IRL CTF Event"
@@ -72,7 +72,7 @@ days:
         type: TBD
       - time: "22:30"
         title: "1 Hour Hackathon"
-        location: "TBD"
+        location: "OC0.01"
         type: TBD
 
   - label: "Day 2"
