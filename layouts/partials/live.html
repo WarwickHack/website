@@ -1,0 +1,107 @@
+{{/* LIVE: what's on now and what's up next, worked out from data/schedule.yaml and the visitor's clock.
+     Only shows from 3 hours before the first event until 2 hours after the last one; a "Live" link
+     appears in the navbar for the same window. Preview any time by adding ?now=2026-11-07T13:30 to the URL.
+     Script: static/js/live.js */}}
+{{ $firstDay := time.AsTime hugo.Data.site.starts_at "Europe/London" }}
+<section class="section" id="live" hidden>
+     <h1 class="gradiented">HAPPENING NOW</h1>
+
+     <div id="live-cards">
+          <div class="live-card" id="live-now">
+               <span class="live-label"><span class="live-dot"></span>NOW</span>
+               <span class="live-title"></span>
+               <span class="live-meta"></span>
+          </div>
+          <div class="live-card" id="live-next">
+               <span class="live-label">UP NEXT</span>
+               <span class="live-title"></span>
+               <span class="live-meta"></span>
+          </div>
+     </div>
+
+     <ul id="live-events" hidden>
+          {{ range $di, $day := hugo.Data.schedule.days }}
+               {{ $date := ($firstDay.AddDate 0 0 $di).Format "2006-01-02" }}
+               {{ range $day.events }}
+                    {{ $start := time.AsTime (printf "%sT%s:00" $date .time) "Europe/London" }}
+                    <li data-start="{{ $start.Format "2006-01-02T15:04:05Z07:00" }}" data-title="{{ .title }}" data-location="{{ .location }}"></li>
+               {{ end }}
+          {{ end }}
+     </ul>
+</section>
+
+<style>
+     #live[hidden], .nav li[hidden] { display: none !important; }
+
+     #live {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 48px;
+          scroll-margin-top: var(--navbar-height);
+
+          h1 { font-size: clamp(56px, 9vw, 128px); text-align: center; }
+     }
+
+     #live-cards {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 24px;
+          width: 100%;
+          max-width: 1100px;
+
+          @media screen and (max-width: 800px) { grid-template-columns: 1fr; }
+     }
+
+     .live-card {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          padding: 32px;
+          background-color: var(--card);
+          border: 2px solid var(--border);
+          border-radius: var(--radius);
+     }
+
+     #live-now { border-color: var(--pink); }
+
+     .live-label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-family: "Oswald", sans-serif;
+          font-weight: bold;
+          letter-spacing: 0.12em;
+          color: var(--muted-text);
+     }
+
+     #live-now .live-label { color: var(--pink); }
+
+     .live-title {
+          font-family: "Oswald", sans-serif;
+          font-weight: bold;
+          font-size: clamp(32px, 4vw, 56px);
+          line-height: 1.1;
+     }
+
+     .live-meta { font-size: 20px; color: var(--muted-text); }
+
+     .live-dot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-right: 6px;
+          border-radius: 50%;
+          background-color: var(--pink);
+          animation: live-pulse 1.6s ease-in-out infinite;
+     }
+
+     .live-label .live-dot { margin-right: 0; }
+
+     @keyframes live-pulse {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.25; }
+     }
+</style>
+
+<script src="{{ "js/live.js" | relURL }}" defer></script>
