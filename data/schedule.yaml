@@ -70,7 +70,7 @@ days:
         type: TBD
       - time: "21:00"
         title: "IRL CTF Event"
-        location: "TBD"
+        location: "OC0.01"
         type: TBD
       - time: "22:30"
         title: "1 Hour Hackathon"
@@ -86,11 +86,11 @@ days:
         type: TBD
       - time: "02:00"
         title: "Poker Tourney"
-        location: "TBD"
+        location: "OC0.01"
         type: TBD
       - time: "05:00"
         title: "Pitch-a-Stupid-Item"
-        location: "TBD"
+        location: "OC0.01"
         type: TBD"
       - time: "07:00"
         title: "Breakfast Served"
@@ -106,7 +106,7 @@ days:
         type: TBD
       - time: "12:30"
         title: "Judging Period Begins"
-        location: "TBD"
+        location: "OC0.01, OC0.02, OC0.03, OC1.01"
         type: TBD
       - time: "17:00"
         title: "Closing Ceremony"
