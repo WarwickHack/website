@@ -24,7 +24,7 @@
                {{ $date := ($firstDay.AddDate 0 0 $di).Format "2006-01-02" }}
                {{ range $day.events }}
                     {{ $start := time.AsTime (printf "%sT%s:00" $date .time) "Europe/London" }}
-                    <li data-start="{{ $start.Format "2006-01-02T15:04:05Z07:00" }}" data-title="{{ .title }}" data-location="{{ .location }}"></li>
+                    <li data-start="{{ $start.Format "2006-01-02T15:04:05Z07:00" }}" data-title="{{ .title }}" data-location="{{ .location }}" data-cancelled="{{ if .cancelled }}true{{ end }}"></li>
                {{ end }}
           {{ end }}
      </ul>
@@ -85,6 +85,9 @@
      }
 
      .live-meta { font-size: 20px; color: var(--muted-text); }
+
+     .live-card.cancelled .live-title { text-decoration: line-through; color: var(--muted-text); }
+     .live-card.cancelled .live-meta { color: var(--pink); font-weight: bold; }
 
      .live-dot {
           display: inline-block;

@@ -11,6 +11,7 @@
 #           location: <room, or "" to hide>
 #           type:     <used for colour-coding; define the set you want
 #                      and add a matching colour in main.css>
+#           cancelled: <optional; true shows it as cancelled on the schedule and live section>
 
 provisional: true
 
@@ -54,6 +55,7 @@ days:
         title: "Capital One Sponsor Talk"
         location: "OC1.05"
         type: TBD
+        cancelled: true
       - time: "16:30"
         title: "Speed Networking"
         location: "OC0.01"

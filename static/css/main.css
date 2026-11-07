@@ -1207,3 +1207,22 @@ img {
 }
 
 .footer::after { height: 0 !important; }
+
+
+/* --- Cancelled events (cancelled: true in data/schedule.yaml) --- */
+#schedule .row.cancelled .time,
+#schedule .row.cancelled .white {
+     text-decoration: line-through;
+     opacity: 0.5;
+}
+
+#schedule .row.cancelled svg { opacity: 0.5; }
+
+#schedule .cancelled-tag {
+     font-size: 0.7em;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: var(--pink);
+     margin-top: 0.2rem;
+     margin-left: -0.7rem;
+}

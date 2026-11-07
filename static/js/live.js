@@ -6,7 +6,12 @@
     if (!section) return;
 
     const events = [...section.querySelectorAll("#live-events li")]
-        .map(li => ({ start: new Date(li.dataset.start), title: li.dataset.title, location: li.dataset.location }))
+        .map(li => ({
+            start: new Date(li.dataset.start),
+            title: li.dataset.title,
+            location: li.dataset.location,
+            cancelled: li.dataset.cancelled === "true",
+        }))
         .filter(event => !isNaN(event.start))
         .sort((a, b) => a.start - b.start);
     if (events.length === 0) return;
@@ -38,9 +43,10 @@
         return hours ? `in ${hours}h ${minutes % 60}m` : `in ${minutes}m`;
     }
 
-    function fill(card, title, meta) {
+    function fill(card, title, meta, cancelled = false) {
         card.querySelector(".live-title").textContent = title;
         card.querySelector(".live-meta").textContent = meta;
+        card.classList.toggle("cancelled", cancelled);
     }
 
     function update() {
@@ -54,7 +60,9 @@
         const next = nextIndex === -1 ? null : events[nextIndex];
         const current = nextIndex === -1 ? events[events.length - 1] : events[nextIndex - 1];
 
-        if (current) {
+        if (current?.cancelled) {
+            fill(nowCard, current.title, "Cancelled · keep hacking!", true);
+        } else if (current) {
             fill(nowCard, current.title, `Since ${clock(current.start)}${place(current)}`);
         } else {
             fill(nowCard, "Setting up", "The team's getting everything ready");
@@ -62,7 +70,11 @@
 
         if (next) {
             const day = weekday(next.start) === weekday(now) ? "" : `${weekday(next.start)} `;
-            fill(nextCard, next.title, `${day}${clock(next.start)} · ${until(next.start - now)}${place(next)}`);
+            if (next.cancelled) {
+                fill(nextCard, next.title, `${day}${clock(next.start)} · Cancelled`, true);
+            } else {
+                fill(nextCard, next.title, `${day}${clock(next.start)} · ${until(next.start - now)}${place(next)}`);
+            }
         } else {
             fill(nextCard, "That's a wrap", "Thanks for coming to WHACK!");
         }
