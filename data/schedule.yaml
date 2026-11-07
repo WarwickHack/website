@@ -78,21 +78,29 @@ days:
   - label: "Day 2"
     date: "Sun 8 Nov"
     events:
-      - time: "00:00"
-        title: "Overnight Events"
+      - time: "01:00"
+        title: "Karaoke"
+        location: "OC1.05"
+        type: TBD
+      - time: "02:00"
+        title: "Poker Tourney"
         location: "TBD"
         type: TBD
+      - time: "05:00"
+        title: "Pitch-a-Stupid-Item"
+        location: "TBD"
+        type: TBD"
       - time: "07:00"
         title: "Breakfast Served"
-        location: "TBD"
+        location: "OC0.04"
         type: TBD
       - time: "11:00"
         title: "Submissions Close"
-        location: "TBD"
+        location: ""
         type: TBD
       - time: "11:30"
         title: "Lunch Served"
-        location: "TBD"
+        location: "Piazza"
         type: TBD
       - time: "12:30"
         title: "Judging Period Begins"
@@ -100,5 +108,5 @@ days:
         type: TBD
       - time: "17:00"
         title: "Closing Ceremony"
-        location: "TBD"
+        location: "OC1.05"
         type: TBD
