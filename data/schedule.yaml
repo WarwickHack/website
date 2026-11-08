@@ -104,9 +104,9 @@ days:
         title: "Lunch Served"
         location: "Piazza"
         type: TBD
-      - time: "12:30"
+      - time: "13:00"
         title: "Judging Period Begins"
-        location: "OC0.01, OC0.02, OC0.03, OC1.01"
+        location: "OC0.01, OC0.03, OC1.07, OC1.08, OC1.09"
         type: TBD
       - time: "17:00"
         title: "Closing Ceremony"
