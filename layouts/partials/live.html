@@ -1,5 +1,5 @@
 {{/* LIVE: what's on now and what's up next, worked out from data/schedule.yaml and the visitor's clock.
-     Only shows from 3 hours before the first event until 2 hours after the last one; a "Live" link
+     Only shows from 3 hours before the first event until 1 hour after the last one; a "Live" link
      appears in the navbar for the same window. Preview any time by adding ?now=2026-11-07T13:30 to the URL.
      Script: static/js/live.js */}}
 {{ $firstDay := time.AsTime hugo.Data.site.starts_at "Europe/London" }}

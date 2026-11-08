@@ -21,7 +21,7 @@
 
     const HOUR = 60 * 60 * 1000;
     const showFrom = events[0].start - 3 * HOUR;
-    const showUntil = events[events.length - 1].start.getTime() + 2 * HOUR;
+    const showUntil = events[events.length - 1].start.getTime() + 1 * HOUR;
 
     // A "Live" link at the front of the navbar while the section is showing.
     const navItem = document.createElement("li");
